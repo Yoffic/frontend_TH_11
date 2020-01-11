@@ -1,0 +1,236 @@
+body {
+	position: relative;
+}
+body,
+.jumbotron {
+	background-color: #fafafa;
+}
+.jumbotron {
+	margin-bottom: 0;
+}
+.jumbotron .container h2 {
+	font-family: 'Wire One', sans-serif;
+	font-size: 7rem;
+}
+.jumbotron .container h2 span {
+	font-size: 4.3rem;
+}
+.progress {
+	width: 11rem;
+	height: 11rem;
+	line-height: 11rem;
+	background: none;
+	margin: 0 auto;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	box-shadow: none;
+	position: relative;
+}
+.progress:after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border: .4rem solid #d7d7d7;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.progress > span {
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	z-index: 100;
+}
+.progress-left {
+	left: 0;
+}
+.progress-right {
+	right: 0;
+}
+.progress-bar {
+	background: none;
+	width: 100%;
+	height: 100%;
+	border: .4rem solid #17a2b8;
+	position: absolute;
+	top: 0;
+}
+.progress-left .progress-bar {
+	left: 100%;
+	border-top-right-radius: 5.5rem;
+	border-bottom-right-radius: 5.5rem;
+	border-left: 0;
+	-webkit-transform-origin: center left;
+	transform-origin: center left;
+}
+.progress-right .progress-bar {
+	left: -100%;
+	border-top-left-radius: 5.5rem;
+	border-bottom-left-radius: 5.5rem;
+	border-right: 0;
+	-webkit-transform-origin: center right;
+	transform-origin: center right;
+}
+.progress-value {
+	font-size: 2rem;
+	line-height: 1.3rem;
+	background-color: #fafafa;
+}
+
+.progress[data-percentage="95"] .progress-left .progress-bar {
+	-webkit-transform: rotate(162);
+			transform: rotate(162deg);
+}
+.progress[data-percentage="90"] .progress-left .progress-bar {
+	-webkit-transform: rotate(144);
+			transform: rotate(144deg);
+}
+.progress[data-percentage="85"] .progress-left .progress-bar {
+	-webkit-transform: rotate(126);
+			transform: rotate(126deg);
+}
+.progress[data-percentage="80"] .progress-left .progress-bar {
+	-webkit-transform: rotate(108);
+			transform: rotate(108deg);
+}
+.progress[data-percentage="75"] .progress-left .progress-bar {
+	-webkit-transform: rotate(90);
+			transform: rotate(90deg);
+}
+
+.progress[data-percentage="70"] .progress-left .progress-bar {
+	-webkit-transform: rotate(72);
+			transform: rotate(72deg);
+}
+
+.progress[data-percentage="65"] .progress-left .progress-bar {
+	-webkit-transform: rotate(54);
+			transform: rotate(54deg);
+}
+
+.progress[data-percentage="60"] .progress-left .progress-bar {
+	-webkit-transform: rotate(36);
+			transform: rotate(36deg);
+}
+
+.progress[data-percentage="55"] .progress-left .progress-bar {
+	-webkit-transform: rotate(18);
+			transform: rotate(18deg);
+}
+
+.progress[data-percentage="95"] .progress-right .progress-bar,
+.progress[data-percentage="90"] .progress-right .progress-bar,
+.progress[data-percentage="85"] .progress-right .progress-bar,
+.progress[data-percentage="80"] .progress-right .progress-bar,
+.progress[data-percentage="75"] .progress-right .progress-bar,
+.progress[data-percentage="65"] .progress-right .progress-bar,
+.progress[data-percentage="60"] .progress-right .progress-bar,
+.progress[data-percentage="55"] .progress-right .progress-bar,
+.progress[data-percentage="50"] .progress-right .progress-bar {
+	-webkit-transform: rotate(180);
+			transform: rotate(180deg);
+}
+
+.progress[data-percentage="35"] .progress-right .progress-bar {
+	-webkit-transform: rotate(126);
+			transform: rotate(126deg);
+}
+
+.extra-skills span {
+	transition: .5s;
+}
+.extra-skills span:hover {
+	background-color: #17a2b8 !important;
+}
+.contacts a {
+	margin-right: .3rem;
+	margin-left: .3rem;
+}
+.contacts svg {
+	width: 3rem;
+	transition: .6s;
+}
+#arrow {
+	position: fixed;
+	z-index: 101;
+	bottom: 2rem;
+	right: 1rem;
+	cursor: pointer;
+}
+#arrow i {
+	opacity: .7;
+	padding-top: .8rem;
+	padding-bottom: .8rem;
+}
+#arrow i:hover {
+	opacity: 1;
+}
+footer {
+	font-size: .9rem;
+}
+
+@media (min-width: 576px) {
+	.card-columns {
+	    -webkit-column-count: 2;
+		   -moz-column-count: 2;
+				column-count: 2;
+	    column-gap: 1.25rem;
+	    orphans: 1;
+	    widows: 1;
+	}
+}
+
+@media (min-width: 768px) {
+	.jumbotron {
+		min-height: 32rem;
+	}
+	#arrow {
+		right: 2.5rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.jumbotron {
+		min-height: 32rem;
+	}
+	.jumbotron .container h2 {
+		margin-left: 5rem;
+		font-size: 10rem;
+	}
+	.jumbotron .container h2 span {
+		font-size: 6rem;
+	}
+	.portfolio {
+		min-height: 25rem;
+	}
+	.card img {
+		-webkit-filter: grayscale(100%) opacity(50%);
+	    filter: grayscale(100%) opacity(50%);
+	    transition: .7s;
+	}
+
+	.card:hover > img {
+		-webkit-filter: grayscale(0) opacity(100%);
+	    filter: grayscale(0) opacity(100%); 
+	}
+	.card-columns{
+		-webkit-column-count: 3;
+		   -moz-column-count: 3;
+				column-count: 3;
+	}
+	.contacts svg:hover {
+		fill: #000;
+	}
+}
+
+@media (min-width: 1200px) {
+	.jumbotron {
+		min-height: 30rem;
+	}
+	.jumbotron .container {
+		max-width: 1000px;
+	}
+}
