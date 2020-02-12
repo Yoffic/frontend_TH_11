@@ -1,20 +1,20 @@
 [Russian](#личное-портфолио)
 
 # Personal Portfolio  
-View how it works [here](https://yoffic.github.io/frontend_TH_11/)
+View how it works [here](https://yoffic.github.io/treehouse_portfolio/)
 
 This is a study project made for Treehouse Frontend techdegree programm. It consist of study projects made during the study at Treehouse. 
 
-- [Simple Portfolio](https://github.com/Yoffic/frontend_TH_11/projects/simple_portfolio)
-- [Web Form](https://github.com/Yoffic/frontend_TH_11/projects/web_form)
-- [Sass Refactor](https://github.com/Yoffic/frontend_TH_11/projects/scss_refactor)
-- [SVG Update](https://github.com/Yoffic/frontend_TH_11/projects/svg_update)
-- [Accessibility Refactor](https://github.com/Yoffic/frontend_TH_11/projects/accessibility_refactor)
-- [Video Player](https://github.com/Yoffic/frontend_TH_11/projects/video_player)
-- [Photo Gallery](https://github.com/Yoffic/frontend_TH_11/projects/photo_gallery)
-- [Employee Prototype](https://github.com/Yoffic/frontend_TH_11/projects/employee_prototype)
-- [Dashboard](https://github.com/Yoffic/frontend_TH_11/projects/dashboard)
-- [React Gallery](https://github.com/Yoffic/frontend_TH_11/projects/react_gallery)
+- [Simple Portfolio](https://github.com/Yoffic/treehouse_portfolio/tree/master/projects/simple_portfolio)
+- [Web Form](https://github.com/Yoffic/treehouse_portfolio/tree/master/projects/web_form)
+- [Sass Refactor](https://github.com/Yoffic/treehouse_portfolio/tree/master/projects/scss_refactor)
+- [SVG Update](https://github.com/Yoffic/treehouse_portfolio/tree/master/projects/svg_update)
+- [Accessibility Refactor](https://github.com/Yoffic/treehouse_portfolio/tree/master/projects/accessibility_refactor)
+- [Video Player](https://github.com/Yoffic/treehouse_portfolio/tree/master/projects/video_player)
+- [Photo Gallery](https://github.com/Yoffic/treehouse_portfolio/tree/master/projects/photo_gallery)
+- [Employee Prototype](https://github.com/Yoffic/treehouse_portfolio/tree/master/projects/employee_prototype)
+- [Dashboard](https://github.com/Yoffic/treehouse_portfolio/tree/master/projects/dashboard)
+- [React Gallery](https://github.com/Yoffic/treehouse_portfolio/tree/master/projects/react_gallery)
 
 
 **Brief**   
@@ -28,20 +28,20 @@ Could be issues in IE or Edge.
 
 *** 
 ## Личное портфолио
-Посмотреть как работает можно [здесь](https://yoffic.github.io/frontend_TH_11/)
+Посмотреть как работает можно [здесь](https://yoffic.github.io/treehouse_portfolio/)
 
 Финальный учебный проект "Персональное портфолио", выполненный в рамках программы Treehouse Frontend techdegree. Портфолио состоит из проектов, выполненных во время обучения в Treehouse.
 
-- [Простое Портфолио](https://github.com/Yoffic/frontend_TH_11/projects/simple_portfolio)
-- [Форма Регистрации](https://github.com/Yoffic/frontend_TH_11/projects/web_form)
-- [Sass Рефакторинг](https://github.com/Yoffic/frontend_TH_11/projects/scss_refactor)
-- [Замена Картинок на SVG](https://github.com/Yoffic/frontend_TH_11/projects/svg_update)
-- [Рефакторинг на Доступность](https://github.com/Yoffic/frontend_TH_11/projects/accessibility_refactor)
-- [Видео Плеер](https://github.com/Yoffic/frontend_TH_11/projects/video_player)
-- [Галерея Фотографий](https://github.com/Yoffic/frontend_TH_11/projects/photo_gallery)
-- [Прототип Странички Сотрудников](https://github.com/Yoffic/frontend_TH_11/projects/employee_prototype)
-- [Интерфейс Приложения](https://github.com/Yoffic/frontend_TH_11/projects/dashboard)
-- [Галерея на Реакте](https://github.com/Yoffic/frontend_TH_11/projects/react_gallery)
+- [Простое Портфолио](https://github.com/Yoffic/treehouse_portfolio/tree/master/projects/simple_portfolio)
+- [Форма Регистрации](https://github.com/Yoffic/treehouse_portfolio/tree/master/projects/web_form)
+- [Sass Рефакторинг](https://github.com/Yoffic/treehouse_portfolio/tree/master/projects/scss_refactor)
+- [Замена Картинок на SVG](https://github.com/Yoffic/treehouse_portfolio/tree/master/projects/svg_update)
+- [Рефакторинг на Доступность](https://github.com/Yoffic/treehouse_portfolio/tree/master/projects/accessibility_refactor)
+- [Видео Плеер](https://github.com/Yoffic/treehouse_portfolio/tree/master/projects/video_player)
+- [Галерея Фотографий](https://github.com/Yoffic/treehouse_portfolio/tree/master/projects/photo_gallery)
+- [Прототип Странички Сотрудников](https://github.com/Yoffic/treehouse_portfolio/tree/master/projects/employee_prototype)
+- [Интерфейс Приложения](https://github.com/Yoffic/treehouse_portfolio/tree/master/projects/dashboard)
+- [Галерея на Реакте](https://github.com/Yoffic/treehouse_portfolio/tree/master/projects/react_gallery)
 
 **Задача**   
 Создайте с нуля персональное портфолио, в котором будут присутствовать ссылки на проекты, сделанные во время обучения. Вы можете использовать любые библиотеки или фреймворки, такие как Bootstrap и jQuery.  
