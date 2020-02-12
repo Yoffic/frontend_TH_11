@@ -4,7 +4,7 @@ View how it works [here](https://yoffic.github.io/treehouse_portfolio/projects/s
 This is a study project made for Treehouse Frontend techdegree programm.
 
 **Brief**   
-Convert CSS stylesheet from [Simple Portfolio Project](https://github.com/Yoffic/treehouse_portfolio/projects/simple_portfolio) to Scss using partials, variables, extends, and mixins.   
+Convert CSS stylesheet from [Simple Portfolio Project](https://github.com/Yoffic/treehouse_portfolio/tree/master/projects/simple_portfolio) to Scss using partials, variables, extends, and mixins.   
 
 **Tech stack**   
 Scss, HTML5, CSS3, mobile-first approach, responsive design, cross-browser compatibility.
@@ -19,7 +19,7 @@ Could be issues in IE or Edge.
 Учебный проект в рамках программы Treehouse Frontend techdegree.
 
 **Задача**   
-Перевести CSS стили из [проекта Простое Портфолио](https://github.com/Yoffic/treehouse_portfolio/projects/simple_portfolio/#вёрстка-одностраничного-портфолио) на модульный Scss с использованием переменных, расширений и миксинов.
+Перевести CSS стили из [проекта Простое Портфолио](https://github.com/Yoffic/treehouse_portfolio/tree/master/projects/simple_portfolio/#вёрстка-одностраничного-портфолио) на модульный Scss с использованием переменных, расширений и миксинов.
 
 **Использованный стек**   
 Scss, HTML5, CSS3, подход mobile-first, адаптивная, кроссбраузерная вёрстка.
