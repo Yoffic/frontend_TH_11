@@ -1,0 +1,39 @@
+// Font stacks
+
+$font-base--sans-serif	: Helvetica, Arial, sans-serif;
+$font-family--primary	: 'Open Sans', $font-base--sans-serif;
+$font-family--secondary	: 'Roboto', $font-base--sans-serif;
+
+// Font weights
+
+$font-weight--light		: 300;
+$font-weight--regular	: 400;
+$font-weight--medium	: 500;
+$font-weight--semi-bold	: 600;
+$font-weight--bold		: 700;
+
+// Colors
+
+$white	: #fff;
+$black	: #0b0b0b;
+$grey	: #777;
+
+$midnight			: #222;
+$dusk				: #333;
+$pavement			: #444;
+$dark-grey			: #666;
+$grass-grey			: #e6e9e4;
+$extra-light-grey	: #ededed;
+$transparent-grey	: #fffef5;
+$calm-blue			: #1d74b2;
+$bright-blue		: #1974a2;
+$ultramarine		: #0080dd;
+
+// Text
+$base__font-size	: 16px;
+$base__line			: 1.4;
+
+// Screen sizes
+
+$tablet: 768px;
+$desktop: 1024px;

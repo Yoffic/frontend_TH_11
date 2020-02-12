@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/survey.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <title>Accessible Frog</title>
+  </head>
+
+  <body>
+    <nav role="navigation">
+      <ul class="nav">
+        <li class="name"><a href="index.html">Accessible Frog</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="#">Survey</a></li>
+      </ul>
+    </nav>
+
+    <header role="banner">
+      <h1>ACCESSIBLE FROG</h1>
+      <p>we make awesome music</p>
+    </header>
+
+    <main role="main">
+      <h2>Survey</h2>
+      <div class="card">
+        <div class="flex">
+          <img class="photo" src= "img/concert01.jpg" alt="people at the concert">
+          <div class="container">
+            <form class = "survey" role="form" action="survey.html" method="post">
+              
+              <fieldset>
+                <legend>Who is your favorite band member:</legend>
+                <input type="radio" id="john-fan" name="res" value="John"><label for="john-fan" class="member-label">John</label><br>
+                <input type="radio" id="hazzard-fan" name="res" value="Hazzard"><label for="hazzard-fan" class="member-label">Hazzard</label><br>
+                <input type="radio" id="bob-fan" name="res" value="Bob"><label for="bob-fan" class="member-label">Bob</label><br> 
+                <input type="radio" id="sally-fan" name="res" value="Sally"><label for="sally-fan" class="member-label">Sally</label><br> 
+              </fieldset>
+              
+              <label for="albums">What is your favorite album:</label>
+              <select id="albums" name="select">
+                <option value="1">A Day Of Old</option>
+                <option value="2">Diamond Fireworks</option>
+                <option value="3">Enjoy Your Desire</option>
+                <option value="4">Finding My Shadow</option>
+                <option value="5">Heroic Forever</option>
+                <option value="6">Midnight Fires</option>
+                <option value="7">Music Of My Life</option>
+                <option value="8">Party For An Angel</option>
+                <option value="9">Song For Yesterday</option>
+                <option value="10">Street Of The Rider</option>
+                <option value="11">This Is For You</option>
+              </select>
+
+              <label for="free-text">What is your favorite song:</label>
+              <textarea id="free-text"></textarea>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <h2>Newsletter</h2>
+      <div class="card">
+        <div class="flex">
+          <img class="photo" src= "img/the_band.jpg" alt="the drummer and the guitarist on the stage">
+            <div class="container">
+              <form class="newsletter">
+
+                <label for="name">Name: </label><input type ="text" name="textfield" id="name" aria-describedby="hint-name">
+                <span tabindex="-1" id="hint-name">Fill in your First and Second Name using only letters</span>
+
+                <label for="email">Email: </label><input type ="email" name="textfield" id="email" aria-describedby="hint-mail">
+                <span tabindex="-1" id="hint-mail">Add your valid email address for letting us provide you news and information about the band</span>
+                
+                <label for="confirm-email">Retype Email: </label><input type ="email" name="textfield" id="confirm-email" aria-describedby="hint-mail2">
+                <span tabindex="-1" id="hint-mail2">Repeate your email address here to confirm it</span>
+                
+                <button type="submit" aria-describedby="hint-button">Sign Up</button>
+                <span tabindex="-1" id="hint-button">By pressing this button you sending us all the information you have provided below in the survey and confirmed the e-mail subscription to our newsletters and special offers</span>
+                  
+              </form>
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <footer role="contentinfo">
+      <ul>
+        <li><a href="#" class="social twitter"><img src="img/twitter-32.png" alt="twitter logo"></a></li>
+        <li><a href="#" class="social youtube"><img src="img/youtube-32.png" alt="youtube logo"></a></li>
+        <li><a href="#" class="social spotify"><img src="img/spotify-32.png" alt="spotify logo"></a></li>
+      </ul>
+      <p class="copyright">Copyright 2018, Accessible Frog</p>
+    </footer>
+  </body>
+</html>

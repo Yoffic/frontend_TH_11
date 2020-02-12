@@ -1,0 +1,88 @@
+.portfolio-block {
+	background-color: $white;
+	@include padding-edges(em(35px), em(50px));
+	@include tablet {
+		@include padding-edges(em(38px), null);
+	}
+	@include desktop {
+		background-color: transparent;
+		padding: 0;
+	}
+	.container {
+		@include desktop {
+			background-color: $white;
+			@include padding-edges(2.9em, 3.125em);
+		}
+	}
+	h2 {
+		@include tablet {
+			@include text(.9rem);
+			font-size: .9rem;
+		}
+		@include desktop {
+			@include text(.95em);
+		}
+	}
+	.card {
+		margin: em(46px) 0 0;
+		p {
+			@include text(em(15px), 1.52);
+			@include padding-sides(em(11px), em(11px));
+			@include margin-edges(em(17px), em(18px));
+			@extend %color-dusk;
+			@include tablet {
+				@include padding-sides(em(40px), em(40px));
+			}
+			@include desktop {
+				@include padding-sides(em(11px), em(11px));
+			}
+		}
+		.card-2 {
+			@include margin-edges(em(32px), null);
+		}
+		@include tablet {
+			display:inline-block;
+			margin: em(43px) -2px auto;
+			width: 49%;
+			vertical-align: top;
+		}
+		@include desktop {
+			@include margin-edges(em(54px), null);
+			width: 32%;
+		}
+	}
+	.card-1,
+	.card-3,
+	.card-5 {
+		@include tablet {
+			@include margin-sides(null, .8%);
+		}
+		@include desktop {
+			@include margin-sides(0, 1.5%);
+		}
+	}
+	.card-2,
+	.card-4,
+	.card-6 {
+		@include tablet {
+			@include margin-sides(.8%, null);
+		}
+		@include desktop {
+			@include margin-sides(0, 1.5%);
+		}
+	}
+	.card-4,
+	.card-5,
+	.card-6 {
+		@include desktop {
+			@include margin-edges(em(43px), null);
+		}
+	}
+	.card-3,
+	.card-6 {
+		@include desktop {
+			@include margin-sides(0, 0);
+		}
+	}
+}
+

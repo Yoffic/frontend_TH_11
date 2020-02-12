@@ -1,0 +1,90 @@
+main {
+	color: $gray--dark;
+	@extend %display-flex;
+	@include flex(flex-flow, column wrap);
+	@include tablet {
+		@include flex(flex-flow, row wrap);
+	}
+	.bookmark-area {
+		@extend %display-flex;
+		width: 100%;
+		@include flex(flex-flow, column wrap);
+		@include flex(align-items, center);
+		@include flex(justify-content, space-between);
+		@include tablet {
+			@include flex(flex-flow, row wrap);
+			background-color: $gray--soft;
+		}
+		h2 {
+			z-index: 100;
+			padding: 1.5rem 1.5rem;
+			letter-spacing: .07rem;
+			font-weight: $font-weight--regular;
+			margin: 0;
+			@include tablet {
+				border-right: 1px solid $gray--light;
+				position: relative;	
+				background-color: $white;
+				&::after {
+					position: absolute;
+					width: 100%;
+					height: 2px;
+					background-color: $white;
+					content: "";
+					left: 0;
+					bottom: -2px;
+				}
+			}
+		}
+		.search-box {
+			position: relative;
+			padding: 1.5rem;
+			width: 100%;
+			margin-left: auto;
+			@include tablet {
+				width: 23rem;
+				padding: 1rem;
+			}
+			input {
+				margin-bottom: 0;
+			}
+			span {
+				position: absolute;
+				cursor: pointer;
+				background-color: $white;
+				padding: .3rem .3rem .1rem;
+				top: 1.7rem;
+				right: 1.6rem;
+				z-index: 100;
+				color: $violet--regular;
+				font-size: 1.2rem;
+				@include tablet {
+					top: 1.2rem;
+				}
+			}
+		}
+	}
+}
+@include tablet {
+	[class^="col-"] {
+		margin: 0;
+	}
+	.col-1 {
+		width: calc(100% / 12);
+	}
+	.col-2 {
+		width: calc(100% / 12 * 2);
+	}
+	.col-3 {
+		width: calc(100% / 12 * 3);
+	}
+	.col-4 {
+		width: calc(100% / 12 * 4);
+	}
+	.col-5 {
+		width: calc(100% / 12 * 5);
+	}
+	.col-6 {
+		width: calc(100% / 12 * 6);
+	}
+}

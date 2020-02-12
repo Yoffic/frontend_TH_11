@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <link href="css/styles.css" rel="stylesheet" type="text/css" />
+      <link href="css/tour.css" rel="stylesheet" type="text/css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+      <title>Accessible Frog</title>
+  </head>
+
+  <body>
+    <nav role="navigation">
+      <ul class="nav">
+        <li class="name"><a href="index.html">Accessible Frog</a></li>
+        <li><a href="#">Tour</a></li>
+        <li><a href="survey.html">Survey</a></li>
+      </ul>
+    </nav>
+
+    <header role="banner">
+      <h1>ACCESSIBLE FROG</h1>
+      <p>we make awesome music</p>
+    </header>
+
+    <main role="main">
+      <img class="pick" src= "img/guitar_pick.png" alt="">
+      <h2>Tour Dates</h2>
+      <img class="pick" src= "img/guitar_pick.png" alt="">
+
+      <div class="card">
+        <div class="flex">
+          <table>
+            <caption>Tour Dates</caption>
+            <tr class="head">
+              <th scope="col">Date</th>
+              <th scope="col">Venue</th>
+              <th scope="col">Location</th>
+            </tr>
+            <tr>
+              <th scope="row">Mar 10 - 12</th>
+              <td>The Warfield</td>
+              <td>San Francisco, CA</td>
+            </tr>
+            <tr>
+              <th scope="row">Mar 20 - 23</th>
+              <td>Pepsi Center</td>
+              <td>Denver, CO</td>
+            </tr>
+            <tr>
+              <th scope="row">Apr 2 - 4</th>
+              <td>Beacon Theatre</td>
+              <td>New York City, NY</td>
+            </tr>
+            <tr>
+              <th scope="row">Apr 10</th>
+              <td>Paramount Theatre</td>
+              <td>Seattle, WA</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+    
+    <footer role="contentinfo">
+      <ul>
+        <li><a href="#" class="social twitter"><img src="img/twitter-32.png" alt="twitter logo"></a></li>
+        <li><a href="#" class="social youtube"><img src="img/youtube-32.png" alt="youtube logo"></a></li>
+        <li><a href="#" class="social spotify"><img src="img/spotify-32.png" alt="spotify logo"></a></li>
+      </ul>
+      <p class="copyright">Copyright 2018, Accessible Frog</p>
+    </footer>
+  </body>
+</html>

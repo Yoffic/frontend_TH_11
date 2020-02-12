@@ -1,0 +1,62 @@
+.main-footer {
+	width: calc(100% - 2em);
+	margin: auto;
+	border-top: 1px solid $grey;
+	text-align: left;
+	min-height: 4.6em;
+	@include tablet {
+		width: 92%;
+	}
+	@include desktop {
+		width: 88%;
+	}
+}
+footer.container {
+	padding: 0;
+}
+.footer-nav {
+	min-height: 4em;
+	@include padding-sides(0, null);
+	@extend %display-flex;
+	@include flex(justify-content, space-between);
+	@include flex(align-items, center);
+	ul {
+		@include tablet {
+			@include margin-edges(.3em, null);
+		}
+		@include desktop {
+			@include margin-edges(.4em, null);
+		}
+		li {
+			@include text(em(14px), 1, $font-weight--medium);
+			@extend %font-secondary;
+			display: none;
+			@include tablet {
+				display: inline-block;
+			}
+			&:last-of-type {
+				display: inline-block;
+				@include margin-sides(null, -1.2em);
+				@include tablet {
+					display: none;
+				}
+			}
+			&:nth-of-type(4n) {
+				@include tablet {
+					@include margin-sides(null, -1.2em);
+				}
+			}
+			a {
+				display: block;
+				padding: 1.15em;
+				@include desktop {
+					@include padding-sides(1.23em, 1.23em);
+				}
+			}
+		}
+	}
+	h4 {
+		@include padding-edges(.25em, null);
+		@include margin-sides(null, auto); /* for flexbox layout */
+	}
+}

@@ -1,0 +1,156 @@
+main {
+	input[type="text"],
+	textarea, 
+	select {
+		padding: .7rem;
+		margin-bottom: 1rem;
+		border: 1px solid $gray--light;
+		border-radius: .3em;
+		outline: 0;
+		width: 100%;
+	}
+	::-webkit-input-placeholder {
+		@include placeholder;
+	}
+	::-moz-placeholder {
+		@include placeholder;
+	}
+	:-ms-input-placeholder {
+		@include placeholder;
+	}
+	.widget--traffic {
+		width: 100%;
+	}
+	section {
+		padding: 1rem 1.5rem;
+		border-top: 1px solid $gray--light; 
+		h3 {
+			text-transform: uppercase;
+			font-size: .8rem;
+			letter-spacing: .03rem;
+			font-weight: $font-weight--regular;
+		}
+		textarea {
+			overflow: auto;
+			height: 11.05rem;
+			resize: none;
+			@include desktop {
+				height: 6.85rem;
+			}
+		}
+
+		label {
+			display: block;
+			padding: 0;
+			margin-top: 1rem;
+			font-size: .9rem;
+		}
+		
+		button {
+			background-color: $violet--regular;
+		}
+		//traffic menu styling
+		.traffic--header {
+			@include tablet {
+				@include display;
+				@include flex(flex-flow, row);
+				@include flex(justify-content, space-between);
+			}
+		}
+		.switch-ios.switch-toggle {
+			background-color: transparent;
+			box-shadow: none;
+			border-radius: initial;
+			margin-bottom: .7rem;
+			@extend %display-flex;
+			@include flex(flex-flow, row);
+			@include flex(justify-content, space-between);
+			@include largephones {
+				@include flex(justify-content, flex-end);
+				margin-left: auto;
+			}
+		}
+		.switch-toggle::after {
+			display: none;
+		}
+		.switch-toggle input + label{
+			padding: 0 .4rem;
+			color: $gray--shade;
+			@include largephones {
+				padding: 0 1rem;
+				margin: auto .5rem;
+			}
+		}
+		.switch-ios input:checked + label {
+			background-color: $green;
+			border-radius: 5rem;
+			color: $white;
+		}
+	}
+
+	// styling for autocomplete search
+	.autocomplete,
+	.textarea--wrapper {
+		position: relative;
+		line-height: 0;
+	}
+	.autocomplete--list {
+		position: absolute;
+		border: 1px solid $gray--light;
+		border-bottom: none;
+		border-top: none;
+		z-index: 99;
+		top: 73%;
+		left: 0;
+		right: 0;
+	}
+	.autocomplete--list div {
+		padding: .7rem;
+		cursor: pointer;
+		background-color: $white; 
+		border-bottom: 1px solid $gray--light; 
+	}
+	.autocomplete--list div:hover,
+	.autocomplete--active {
+		background-color: $cyan !important; 
+		color: $white; 
+	}
+
+	//styling for interaction with message area
+	input[type="text"].err,
+	.err {
+		border-color: $cyan;
+	}
+	.tooltip {
+		border-radius: .3rem;
+		display: none;
+		font-size: .9rem;
+		text-align: center;
+		position: absolute;
+		bottom: 100%;
+		z-index:101;
+		background: $cyan;
+		padding: .8rem;
+		color: $white;
+		margin-bottom: .5rem;
+		width: 100%;
+	}
+	.tooltip:before {
+		z-index: 100;
+		border-style: solid;
+		position: absolute;
+		border-width: 2rem 1.5rem 0 1.5rem;
+		border-color: $cyan transparent transparent transparent;
+		top: 80%;
+		content: "";
+	}
+	.message--success {
+		border-radius: .3rem;
+		background-color: $green;
+		padding: 1rem;
+		margin-top: 2rem;
+		color: $white;
+		font-size: 1.2rem; 
+	}
+}
+

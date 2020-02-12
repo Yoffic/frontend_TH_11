@@ -1,0 +1,112 @@
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+.container {
+	width: 95%;
+	max-width: 700px;
+	margin: auto;
+}
+.image-link {
+	display: inline-block;
+	padding: 12px;
+	margin: 0;
+	max-width: 50%;
+}
+input[type="text"] {
+	display: block;
+	margin: 25px auto;
+	font-size: 16px;
+	padding: 10px;
+	width: 80%;
+	max-width: 450px;
+	border: 2px solid #ddd;
+	border-radius: .3em;
+	outline: 0;
+}
+::-webkit-input-placeholder { 
+	font-style: italic;
+}
+
+/* Chocolat restyling */
+.chocolat-overlay {
+	background-color: #323232;
+	opacity: 0.97;
+}
+.chocolat-loader {
+	background: url(../img/chocolat/loader.gif);
+}
+.chocolat-wrapper .chocolat-close {
+	background: url(../img/chocolat/close.png) 50% 50% no-repeat;
+}
+.chocolat-wrapper .chocolat-left {
+	background: url(../img/chocolat/left.png) 50% 50% no-repeat;
+}
+.chocolat-wrapper .chocolat-right {
+	background: url(../img/chocolat/right.png) 50% 50% no-repeat;
+}
+.chocolat-wrapper .chocolat-content {
+	object-fit: cover;
+}
+.chocolat-wrapper .chocolat-bottom {
+	padding: 3% 5px 1%;
+	font-size: 12px;
+	height: initial;
+	line-height: 1.5;
+	background: none;
+	text-align: left;
+	width: 90%;
+	max-width: 450px;
+	margin: auto;
+}
+.chocolat-wrapper .chocolat-pagination {
+	display: none;
+}
+
+@media all and (min-width: 768px) {
+	.image-link {
+		padding: 20px;
+		width: 33.3%;
+	}
+	.container {
+		width: 90%;
+		max-width: 720px;
+	}
+	.chocolat-wrapper {
+		height: 93%;
+	}
+	.chocolat-wrapper .chocolat-bottom {
+		padding-left: 0;
+		padding-right: 0;
+		max-width: 650px;	
+	}
+	.chocolat-wrapper .chocolat-left {
+		left: 5%;
+	}
+	.chocolat-wrapper .chocolat-right {
+		right: 5%;
+	}
+	.chocolat-wrapper .chocolat-right,
+	.chocolat-wrapper .chocolat-left {
+		background-size: 50%;
+	}
+	.chocolat-wrapper .chocolat-close {
+		width: 80px;
+	    height: 70px;
+	}
+}
+@media all and (min-width: 1024px) {
+	.image-link {
+		padding: 25px;
+		width: 25%;
+	}
+	.container {
+		width: 80%;
+		max-width: 1024px;
+	}
+}

@@ -1,0 +1,31 @@
+.about-block {
+	@include padding-edges(em(39px), em(25px));
+	@include tablet {
+		@include display;
+		@include flex(flex-direction, row-reverse);
+		@include flex(justify-content, space-between);
+		@include flex(align-items, flex-start);
+		@include padding-edges(em(51px), em(59px));
+	}
+	@include desktop {
+		@include padding-edges(em(34px), null);
+	}
+	.hero-img {
+		width: calc(80% - 2em);
+		@include tablet {
+			width: 40.5%;
+		}
+	}
+	p {
+		color: $bright-blue;
+		@include tablet {
+			text-align: left;
+			margin: 0;
+			@include text(em(20px), 1.4);
+			@include padding-sides(null, .86em);
+		}
+		@include desktop {
+			@include padding-sides(null, 1.26em);
+		}
+	}
+}

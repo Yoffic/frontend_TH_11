@@ -1,0 +1,109 @@
+/* Survey page styles */
+
+.photo {
+  width: 60%;
+  padding: 10px;
+}
+
+form {
+  margin: 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+fieldset {
+  border: none;
+  margin: 1.6em 0 0;
+  padding: 0.6em 0 0.9em;
+}
+
+label {
+  display: block;
+  padding: 0;
+  margin: 1rem auto .3rem;
+}
+
+.member-label {
+  display: inline-block;
+  font-size: .87rem;
+  margin: 0 .2rem .5rem;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  border: none;
+  border-radius: .2rem;
+  padding: .5rem 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  height: auto;
+  margin: 0 0 1.023rem;
+  outline: 0;
+  width: 100%;
+  background-color: #eff0f1;
+  transition: background-color .5s;
+}
+textarea {
+  height: 2rem;
+  margin-top: .25rem;
+  resize: none;
+}
+select {
+  height: 2rem;
+  font-size: .9rem;
+}
+input[type="radio"] {
+  margin-left: .3em;
+}
+
+.container {
+  text-align: center;
+}
+.newsletter {
+  margin-top: 1.2rem;
+}
+.newsletter label {
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+  padding-right: .7rem;
+}
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+  width: 70%;
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+  background-color: #f1f55f;
+}
+button {
+  width: 100%;
+  padding: .5rem 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #005051;
+  border: none;
+  border-radius: .2rem;
+  transition: background-color .5s;
+}
+button:hover,
+button:focus {
+  cursor: pointer;
+  background-color: #007faa;
+}
+/* Styles for larger screens */
+@media screen and (min-width: 840px) {
+  .photo {
+    width: 40%;
+  }
+  button {
+    width: 50%;
+    margin-left: 50%;
+  }
+}

@@ -1,0 +1,68 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+html {
+	min-width: 320px;
+}
+
+body {
+	@include text($base__font-size, $base__line, $font-weight--light);
+	@extend %font-primary;
+	@extend %color-body;
+	background-color: $transparent-grey;
+	min-height: calc(100vh - 4.6em);
+	text-align: center;
+}
+
+ul {
+	@extend %zero-margin;
+	padding: 0;
+	list-style: none;
+}
+
+h1 {
+	@include text(em(24px), 1.2, $font-weight--medium, $pavement);
+	@extend %font-secondary;
+}
+
+h2 {
+	@include text(em(14px), $base__line, $font-weight--medium);
+	@extend %font-secondary;
+	@extend %color-dusk;
+	@include margin-edges(null, 0);
+}
+
+h3 {
+	@include text(em(18px), 1, $font-weight--regular);
+	@extend %font-primary;
+	@extend %color-dusk;
+	margin: em(22px) auto 0;
+}
+
+h4 {
+	@include text(em(15px), 1.1, $font-weight--medium);
+	@extend %font-secondary;
+	@extend %color-midnight;
+	@extend %zero-margin;
+	@include padding-edges(null, 0);
+}
+
+img {
+	max-width: 100%;
+}
+
+p {
+	line-height: 1.6;
+}
+
+a {
+	@extend %color-dusk;
+	@include text(em(14px), $base__line, $font-weight--bold);
+	@extend %font-primary;
+	text-decoration: none;
+	&:hover {
+		cursor: pointer;
+		color: $calm-blue;
+	}
+}

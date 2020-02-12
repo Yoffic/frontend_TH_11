@@ -1,25 +1,16 @@
 $(document).ready(() => {
-	// document.location.href='#';
 	const portfolioTop = $('.card-columns').offset().top;
 	let countUp = 0;
 	$('.card-columns').hide().css('paddingTop', '4rem');
 	$('#arrow').hide();
-	//add feature when user scrolls the window
 	$(window).scroll(() => {
-
-		//get current position from the top of the window
 		let pageY = $(window).scrollTop() || $(document.documentElement).scrollTop();
-		//get browser height
 		let viewHeight = $(window).height();
-
-		//add and remove button for quick scroll to the top after 
 		if (pageY > viewHeight/3) {
 			$('#arrow').show();
 		} else if (pageY < viewHeight/3) {
 			$('#arrow').hide();
 		}
-
-		//animate the appearance of portfolio cards 
 		if (pageY + viewHeight > portfolioTop && countUp === 0) {
 			$('.card-columns').fadeIn(500).animate({
 				paddingTop: 0,
@@ -27,15 +18,11 @@ $(document).ready(() => {
 			countUp = 1;
 		}
 	});
-
-	//animate slow scroll to the top when button clicked
 	$('#arrow').click(() => {
 		$('html,body').animate({
 			scrollTop: 0
 		}, 300);
 	});
-
-	//animate skills progress ring on hover
 	$('.progress').hover(
 		(e) => {
 			$(e.currentTarget).animate({

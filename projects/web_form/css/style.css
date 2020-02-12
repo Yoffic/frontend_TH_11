@@ -1,0 +1,236 @@
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+body {
+	font-family: 'Merriweather', sans-serif;
+	font-weight: 300;
+	color: #2d3945;
+}
+
+/*
+=================================
+	Typography	
+=================================
+*/
+
+h1, h2, p {
+	text-align: center;
+}
+h1 {
+	font-size: 18px;
+	font-weight: 400;
+	padding: 23px 0;
+	color: #fff;
+	margin: 0;
+}
+h2, legend {
+	font-size: 18px;
+	font-weight: 700;
+}
+h2 {
+	margin: .6em auto;
+}
+p {
+	color: #a4a9ae;
+}
+
+/*
+=================================
+	Header	
+=================================
+*/
+
+header {
+	background-color: #48342a;
+}
+
+/*
+=================================
+	Form	
+=================================
+*/
+
+form {
+	padding: 1em 1em 0;
+	margin: 0 auto;
+}
+form p {
+	font-size: .88em;
+	margin: .65em 0 .2em;
+	padding-bottom: 2.6em;
+	border-bottom: 4px solid #2d3945;
+}
+legend {
+	margin-bottom: .8em;
+}
+fieldset {
+	border: none;
+	margin: 1.6em 0 0;
+	padding: 0.6em 0 0.9em;
+}
+hr {
+	margin: 0;
+	border: 1px solid #2d3945;
+}
+
+/*
+=================================
+	Labels	
+=================================
+*/
+
+label {
+	display: block;
+	padding: 0;
+	font-size: .87em;
+	margin-bottom: .8em;
+	color: #55687a;
+}
+.newsletter {
+	display: inline-block;
+	margin-left: 1em;
+	margin-bottom: 1em;
+}
+.news-label {
+	line-height: 1.6;
+}
+label[for="js-news"],
+label[for="format-text"] {
+	margin-bottom: 1.8em;
+}
+
+/*
+=================================
+	Inputs	
+=================================
+*/
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
+	border: none;
+	border-radius: .3em;
+	padding: .95em 1.2em;
+	font-family: inherit;
+	font-weight: 300;
+	font-size: 1rem;
+	height: auto;
+	margin: 0 0 1.023em;
+	outline: 0;
+	width: 100%;
+	background-color: #eff0f1;
+	color: #8a97a0;
+	transition: background-color 1s;
+}
+textarea {
+	height: 6.25em;
+	margin-top: .25em;
+	resize: none;
+}
+select {
+	height: 51px;
+	font-size: .9rem;
+}
+input[type="radio"],
+input[type="checkbox"] {
+	margin-left: .3em;
+}
+#zip {
+	width: 148px;
+}
+::-webkit-input-placeholder { 
+	font-size: .75rem;
+	font-style: italic;
+	text-align: right; 
+}
+
+/*
+=================================
+	Inputs	Interaction
+=================================
+*/
+
+input[type="text"]:focus, 
+input[type="tel"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+	border: 2px solid #55687a;
+	color: #222;
+	background-color: #fdfaf5;
+}
+
+/*
+=================================
+	Button	
+=================================
+*/
+
+button {
+	width: 100%;
+	padding: 1.08em 3em;
+	font-family: inherit;
+	font-size: 1.1rem;
+	color: #fff;
+	background-color: #4b4557;
+	border: none;
+	border-radius: .3em;
+}
+
+/*
+=================================
+	Footer	
+=================================
+*/
+
+footer {
+	font-style: italic;
+	font-size: .88rem;
+	margin-top: 1rem;
+	padding-top: .3rem;
+	padding-bottom: 14.63em;
+	background-color: #b3a59e;
+}
+footer p {
+	color: #eee;
+}
+
+/*
+=================================
+	Media Queries	
+=================================
+*/
+
+@media all and (min-width: 768px) {
+	h2 {
+		font-size: 1.5rem;
+	}
+	form {
+		max-width: 632px;
+		padding-top: 3.1em;
+	}
+	legend {
+		padding-top: 1.4em;
+	}
+	fieldset:first-of-type {
+		padding-bottom: 2em;
+	}
+	.horizontal label {
+		display: inline-block;
+		width: 24%;
+	}
+	input[type="text"],
+	input[type="tel"],
+	input[type="email"],
+	select {
+		width: 74%;
+		margin-bottom: 1.2em;
+	}
+	#zip {
+		width: 155px;
+	}
+}

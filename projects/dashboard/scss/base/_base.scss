@@ -1,0 +1,43 @@
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+body {
+	font-family: $font-family--primary;
+	.body--container {
+		@include desktop {
+			@include display;
+		}
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	color: $violet--light;
+	text-decoration: none;
+}
+button {
+	width: 100%;
+	padding: 1.2rem;
+	border: transparent;
+	border-radius: .4rem;
+	color: $white;
+	text-transform: uppercase;
+	font-size: .8rem;
+	letter-spacing: .03rem;
+	margin-bottom: 1rem;
+	&:hover {
+		cursor: pointer;
+		background-color: $green;
+	}
+}

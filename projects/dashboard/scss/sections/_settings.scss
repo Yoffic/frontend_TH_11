@@ -1,0 +1,90 @@
+.widget--settings {
+	@include tablet {
+		border-left: 1px solid $gray--light;
+	}
+	
+	.selection {
+		position: relative;
+
+		select {
+			height: 2.7rem;
+			margin-top: 3rem; 
+			font-size: .9rem;
+			color: $gray--medium;
+			-webkit-appearance: none;
+			   -moz-appearance: none;
+			   		appearance: none;
+		}
+		&::after {
+			content: '〉';
+			transform: rotate(90deg);
+			font-size: 1.5rem;
+			font-weight: $font-weight--light;
+			color: $violet--regular;
+			position: absolute;
+			top: 2.25rem;
+			right: 1.3rem;
+			height: 5rem;
+			padding: 1rem 0 0 .5rem;
+			pointer-events: none;
+		}
+
+	}
+	.switch-ios.switch-light {
+		@extend %display-flex;
+		@include flex(flex-flow, row);
+		@include flex(align-items, center);
+		@include flex(justify-content, space-between);
+
+	}
+	.switch-ios.switch-light input:checked ~ span {
+		border-color: $violet--regular;
+		box-shadow: inset 0 0 0 1.9rem $violet--regular;
+	}
+	.switch-ios.switch-light input:checked ~ span a {
+		border-color: $violet--regular;
+	}
+	.switch-ios.switch-light > span {
+		display: inline-block;
+		margin-left: auto;
+		width: 5rem;
+		background-color: $gray--medium;
+		
+	}
+	.switch-ios.switch-light > span span{
+		color: $white;
+	}
+	.switch-ios.switch-light a {
+		border-color: $gray--medium;
+	}
+	.switch-light input:focus ~ span a,
+	.switch-light input:focus + label {
+		outline-width: 0;
+	}
+
+// Rounded sliders
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+	button {
+		@include desktop {
+			display: inline-block;
+			width: 49%;
+		}
+		&[type="reset"] {
+			background-color: $gray--medium;
+			@include desktop {
+				margin-left: 2%;
+			}
+		}
+		&[type="reset"]:hover {
+			cursor: pointer;
+			background-color: $green;
+		}
+	}
+}

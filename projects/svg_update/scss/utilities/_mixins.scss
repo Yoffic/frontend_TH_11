@@ -1,0 +1,11 @@
+@mixin fill($fill-ears, $fill-face, $fill-eyebrows) {
+	.ears {
+		fill: $fill-ears;
+	}
+	.face {
+		fill: $fill-face;
+	}
+	.eyebrows {
+		fill: $fill-eyebrows;
+	}
+}

@@ -1,0 +1,48 @@
+main {
+	padding-top: 50px;
+
+	h2 {
+		font-size: 28px;
+	}
+
+	ul {
+		padding: 0;
+	}
+		li {
+			display: inline-block;
+			color: $creamy-brown;
+			margin-right: 20px;
+			span {
+				margin-left: -40px;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+}
+
+// Dog images
+
+.corgi {
+	margin-bottom: 15px;
+	width: 170px;
+	height: 170px;
+	.maw {
+		fill: $shadow-white;
+	}
+	.eyes-nose {
+		fill: $dark-grey;
+	}
+}
+.corgi-red {
+	@include fill($creamy-brown, $creamy-brown, $light-brown);
+}
+.corgi-fawn {
+	@include fill($light-brown, $light-brown, $beige);
+}
+.corgi-sable {
+	@include fill($brown, $brown, $creamy-brown);
+}
+.corgi-blacktan {
+	@include fill($creamy-brown, $medium-grey, $creamy-brown);
+}

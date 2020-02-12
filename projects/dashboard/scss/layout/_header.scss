@@ -1,0 +1,99 @@
+.header {
+	letter-spacing: .07em;
+	margin: 0 auto;
+	background: $violet--regular;
+	position: relative;
+	@extend %display-flex;
+	@include flex(flex-flow, row wrap);
+	@include flex(align-items, center);
+	@include flex(justify-content, space-around); 
+	max-height: 7rem;
+	@include tablet {
+		max-height: 12rem;
+	}
+	.bell {
+		position: relative;
+		margin-top: .3rem;
+		cursor: pointer;
+		.icon::after {
+			content: "";
+			width: .5rem;
+			height: .5rem;
+			right: 1rem;
+			top: .2rem;
+			background: $green;
+			position: absolute;
+			border-color: $green;
+			border-style: solid;
+			border-radius: 50%;
+			z-index: 1;
+		}
+	}
+
+	.icon--bell {
+		height: 2.5rem;
+		padding: .7rem .5rem .5rem;
+		margin-right: .8rem;
+	}
+	
+	h1 {
+		font-weight: $font-weight--bold;
+		font-size: 1.5rem;
+		margin-right: auto;
+		@extend %font-color--white;
+		margin-left: 1.2rem;
+		@include tablet {
+			margin-left: 2rem;
+		}
+
+		span {
+			font-weight: $font-weight--light;
+		}
+		sup {
+			font-size: .8rem;
+			font-weight: $font-weight--light;
+		}
+	}
+	.user-name {
+		display: none;
+		@include largephones { 
+			@include display;
+			@include flex(flex-direction, row);
+			@include flex(align-items, center);
+			margin: 0 1.5rem 0 0;
+			border-top: none;
+			border-left: 1px solid $violet--dark;
+		}
+
+		img {
+			height: 2rem;
+			margin: .3rem .7rem .3rem .1rem;
+			border-radius: 50%;
+			@include largephones {
+				margin: .3rem .7rem .3rem 1.1rem;
+			}
+		}
+
+		span {
+			font-size: .9rem;
+			font-weight: $font-weight--light;
+			@extend %font-color--white;
+		}
+	}
+	.notifications-content {
+		position: absolute;
+		width: 100%;
+		z-index: 103;
+		top: 100%;
+		background-color: $violet--dark;
+		p {
+			color: $white;
+			margin: 0;
+			padding: 1rem;
+			border-top: 1px solid $violet--regular;
+			&:hover {
+				background-color: $green;
+			}
+		}
+	}
+}

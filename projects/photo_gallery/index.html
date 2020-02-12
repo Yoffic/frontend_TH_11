@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>Photo Gallery</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="js/chocolat/chocolat.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<input type="text" name="search" id="search" placeholder="Search">
+		<div class="chocolat-parent">
+			<a href="img/01.jpg" class="image-link" title="Hay Bales<br/>I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
+				<img src="img/thumbnails/01.jpg" alt="Hay Bales">
+			</a><!--
+		 --><a href="img/02.jpg" class="image-link" title="Lake<br/>The lake was so calm today. We had a great view of the snow on the mountains from here.">
+				<img src="img/thumbnails/02.jpg" alt="Lake">
+			</a><!--
+		 --><a href="img/03.jpg" class="image-link" title="Canyon<br/>I hiked to the top of the mountain and got this picture of the canyon and trees below.">
+				<img src="img/thumbnails/03.jpg" alt="Canyon">
+			</a><!--
+		 --><a href="img/04.jpg" class="image-link" title="Iceberg<br/>It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
+				<img src="img/thumbnails/04.jpg" alt="">
+			</a><!--
+		 --><a href="img/05.jpg" class="image-link" title="Desert<br/>The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
+				<img src="img/thumbnails/05.jpg" alt="Desert">
+			</a><!--
+		 --><a href="img/06.jpg" class="image-link" title="Fall<br/>Fall is coming, I love when the leaves on the trees start to change color.">
+				<img src="img/thumbnails/06.jpg" alt="Fall">
+			</a><!--
+		 --><a href="img/07.jpg" class="image-link" title="Plantation<br/>I drove past this plantation yesterday, everything is so green!">
+				<img src="img/thumbnails/07.jpg" alt="Plantation">
+			</a><!--
+		 --><a href="img/08.jpg" class="image-link" title="Dunes<br/>My summer vacation to the Oregon Coast. I love the sandy dunes!">
+				<img src="img/thumbnails/08.jpg" alt="Dunes">
+			</a><!--
+		 --><a href="img/09.jpg" class="image-link" title="Countryside Lane<br/>We enjoyed a quiet stroll down this countryside lane.">
+				<img src="img/thumbnails/09.jpg" alt="Countryside Lane">
+			</a><!--
+		 --><a href="img/10.jpg" class="image-link" title="Sunset<br/>Sunset at the coast! The sky turned a lovely shade of orange.">
+				<img src="img/thumbnails/10.jpg" alt="Sunset">
+			</a><!--
+		 --><a href="img/11.jpg" class="image-link" title="Cave<br/>I did a tour of a cave today and the view of the landscape below was breathtaking.">
+				<img src="img/thumbnails/11.jpg" alt="Cave">
+			</a><!--
+		 --><a href="img/12.jpg" class="image-link" title="Bluebells<br/>I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
+				<img src="img/thumbnails/12.jpg" alt="Bluebells">
+			</a>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/chocolat/jquery.chocolat.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+	    $('.chocolat-parent').Chocolat();
+		});
+	</script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

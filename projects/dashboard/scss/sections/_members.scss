@@ -1,0 +1,83 @@
+.members {
+	.members-info,
+	.members-activity {
+		@extend %display-flex;
+		@include flex(flex-flow, row);
+		@include flex(align-items, center);
+		@include flex(justify-content, space-between);
+		width: 100%;
+		margin-top: 1.5rem;
+		padding-bottom: 1.5rem;
+		border-bottom: 1px solid $gray--light;
+		&:last-of-type {
+			border-bottom: none;
+		}
+		img {
+			height: 2.5rem;
+			border-radius: 50%;
+		}
+		div {
+			@include display;
+			@include flex(flex-flow, column);
+			p {
+				font-size: .8rem;
+				margin: 0;
+			}
+		}
+	}
+	.members-info {
+		.members-info--descr {
+			flex-wrap: wrap;
+			margin-left: .65rem;
+			width: 100%;
+			@include largephones {
+				@include flex(flex-flow, row);
+			}
+			@include tablet {
+				@include flex(flex-flow, column);
+			}
+			@include desktop {
+				@include flex(flex-flow, row);
+			}
+			a {
+				font-size: .8rem;
+			}
+			div {
+				margin-right: auto;
+			}
+			p {
+				margin-top: .2rem;
+				font-size: .75rem;
+			}
+		}
+	}
+	.members-activity {
+		a {
+			font-size: 1.2rem;
+			padding: .5rem;
+			margin-right: -1rem;
+			margin-left: .65rem;
+		}
+		.members-activity--descr {
+			max-width: 15rem;
+			margin-left: .65rem;
+			margin-right: auto;
+			font-weight: $font-weight--light;
+			@include desktop {
+				max-width: 100%;
+			}
+			.members-activity--style {
+				font-weight: $font-weight--regular;
+			}
+			.members-activity--time {
+				margin-top: .2rem;
+				font-size: .75rem;
+			}
+		}
+	}	
+}
+.activity {
+	@include tablet {
+		border-left: 1px solid $gray--light;
+	}
+}

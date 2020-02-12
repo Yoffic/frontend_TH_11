@@ -1,0 +1,67 @@
+nav {
+	background-color: $violet--dark;
+	@include desktop {
+		text-align: center;
+	}
+	.main-nav {
+		margin: 0;
+		padding: .3rem 0;
+		position: relative;
+		@extend %display-flex;
+		@include flex(flex-direction, row);
+		@include flex(justify-content, center);
+
+		@include desktop {
+			@include flex(flex-direction, column);
+			width: 6rem;
+			margin-top: .7rem;
+		}
+
+		li {
+			a:hover {
+				.icon-nav--path{
+					@extend %path-white;
+				}
+			}
+			.selected::after {
+				position: absolute;
+				content: "";
+				width: 3.5rem;
+				height: .3rem;
+				font-size: 0;
+				background-color: $green;
+				z-index: 1;
+				border: solid 1px $green;
+				border-radius: .5rem .5rem 0 0;
+				@include largephones {
+					width: 4.5rem;
+				}
+				@include desktop {
+					left: 0;
+					width: .3rem;
+					height: 4.5rem;
+					border-radius: 0 .5rem .5rem 0;
+				}
+			}
+		}
+		.icon-nav {
+			height: 3.5rem;
+			padding: .8rem;
+			@include largephones {
+				margin: auto .5rem;	
+			}
+			@include desktop {
+				height: 4.5rem;
+				padding: 1.3rem;
+			}
+		}
+		.icon-nav--path {
+			fill: $violet--light;
+		}
+		.selected {
+			.icon-nav--path {
+				@extend %path-white;
+			}
+		}
+	}
+}

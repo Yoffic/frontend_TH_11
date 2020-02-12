@@ -1,0 +1,61 @@
+.contact-block {
+	@include padding-edges(em(41px), em(59px));
+	@include tablet {
+		@include padding-edges(null, em(66px));
+	}
+	@include desktop {
+		@include padding-edges(em(45px), em(72px));
+	}
+	h2 {
+		@extend %margin-bottom--head;
+		@include tablet {
+			@include margin-edges(null, 3em);
+		}
+		@include desktop {
+			@include margin-edges(null, 1.9em);
+		}
+	}
+	a {
+		@include text($base__font-size, $base__line, $font-weight--semi-bold);
+		@extend %color-midnight;
+		@include tablet {
+			font-size: 1.23rem;
+		}
+		&:hover {
+			color: $ultramarine;
+		}
+	}
+	p {
+		@include margin-edges(0, 0);
+		@include tablet {
+			width: 76%;
+			@include text(em(19px));
+			@include margin-sides(auto, auto);
+		}
+		@include desktop {
+			width: 60%;
+			@include text(em(20px));
+		}
+		&:first-of-type {
+			@include margin-edges(null, em(26px));
+			@include tablet {
+				@include margin-edges(null, 2.5em);
+			}
+			@include desktop {
+				@include margin-edges(null, 2.2em);
+			}
+		}
+		&:last-of-type {
+			@include margin-edges(em(13px), null);
+			@include desktop {
+				@include margin-edges(.4em, null);
+			}
+		}
+		span {
+			@include margin-sides(null, em(12px));
+			@include tablet {
+				@include margin-sides(null, .9em);
+			}
+		}
+	}
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans:400,300,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/css-toggle-switch/latest/toggle-switch.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/application.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
+	<script src="js/app.min.js"></script>
+	<title>Dashboard</title>	
+</head>
+<body>
+	
+		<header role="banner" class="header">
+			<h1>Super<span>App<sup>&trade;</sup></span></h1>
+			<div class="bell">
+				<div class="icon"> <!-- this wrap is necessary for green circle at the top of the bell icon -->
+					<svg tabindex="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" enable-background="new 0 0 32 32" class="icon--bell"><style type="text/css">.bell-path{fill:#FFFFFF;}</style><path class="bell-path" d="M24 18v-8c0-5.5-4.5-10-10-10s-10 4.5-10 10v8l-4 8h9.1c.5 2.3 2.5 4 4.9 4s4.4-1.7 4.9-4h9.1l-4-8zm-10 10c-1.3 0-2.4-.8-2.8-2h5.6c-.4 1.2-1.5 2-2.8 2zm-11-4l3-6v-8c0-4.4 3.6-8 8-8s8 3.6 8 8v8l3 6h-22z" id="bell-path"/></svg>
+				</div>
+			</div>
+			<div class="user-name">
+				<img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Helga Yof">
+				<span>Helga Yof</span>
+			</div>
+		</header>
+	<div class="body--container">
+		<nav role="navigation">
+			<ul class="main-nav">
+				<li>
+					<a href="index.html" class="selected" tabindex="2">
+						<svg version="1.1" id="Line_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" class="icon-nav" style="enable-background:new 0 0 32 32;" xml:space="preserve"><style type="text/css">.icon-nav--path{fill:#000;}</style><g id="_x31_0_20_"><path class="icon-nav--path" d="M25,18c1.7,0,3-1.3,3-3c0-1.7-1.3-3-3-3c-1.7,0-3,1.3-3,3C22,16.7,23.3,18,25,18z M24,14h2v2h-2V14z M25,26c1.7,0,3-1.3,3-3c0-1.7-1.3-3-3-3c-1.7,0-3,1.3-3,3C22,24.7,23.3,26,25,26z M24,22h2v2h-2V22z M17,26c1.7,0,3-1.3,3-3c0-1.7-1.3-3-3-3c-1.7,0-3,1.3-3,3C14,24.7,15.3,26,17,26z M16,22h2v2h-2V22z M28,0H6C3.8,0,2,1.8,2,4v24c0,2.2,1.8,4,4,4h22c2.2,0,4-1.8,4-4V4C32,1.8,30.2,0,28,0z M30,28c0,1.1-0.9,2-2,2H6c-1.1,0-2-0.9-2-2V8h26V28z M30,6H4V4c0-1.1,0.9-2,2-2h22c1.1,0,2,0.9,2,2V6z M17,18c1.7,0,3-1.3,3-3c0-1.7-1.3-3-3-3c-1.7,0-3,1.3-3,3C14,16.7,15.3,18,17,18z M16,14h2v2h-2V14z M9,26c1.7,0,3-1.3,3-3c0-1.7-1.3-3-3-3c-1.7,0-3,1.3-3,3C6,24.7,7.3,26,9,26z M8,22h2v2H8V22z M9,18c1.7,0,3-1.3,3-3c0-1.7-1.3-3-3-3c-1.7,0-3,1.3-3,3C6,16.7,7.3,18,9,18z M8,14h2v2H8V14z"/></g></svg>
+						<!-- <span>Dashboard</span> -->
+					</a>
+				</li>
+				<li>
+					<a href="#" tabindex="3">
+						<svg version="1.1" id="Line_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" class="icon-nav" style="enable-background:new 0 0 32 32;" xml:space="preserve"><style type="text/css"> .icon-nav--path{fill:#000;}</style><g id="_x37__17_"><path class="icon-nav--path" d="M18,16.4c1.3-1.7,2-3.9,2-6.4c0-5.5-4-10-9-10C6,0,2,4.5,2,10c0,2.4,0.8,4.6,2,6.4c-2.3,0.8-4,3-4,5.6v4 c0,3.3,2.7,6,6,6h10c3.3,0,6-2.7,6-6v-4C22,19.4,20.3,17.2,18,16.4zM4,10c0-4.4,3.1-8,7-8c3.9,0,7,3.6,7,8s-3.1,8-7,8 C7.1,18,4,14.4,4,10z M20,25.5c0,2.5-2.2,4.5-4.9,4.5H6.9C4.2,30,2,28,2,25.5v-3c0-2.1,1.6-3.9,3.8-4.4C7.2,19.3,9,20,11,20c2,0,3.8-0.7,5.2-1.9c2.2,0.5,3.8,2.2,3.8,4.4V25.5z M23,8h8c0.6,0,1-0.4,1-1c0-0.6-0.4-1-1-1h-8c-0.6,0-1,0.4-1,1C22,7.6,22.4,8,23,8z M31,24h-6c-0.6,0-1,0.4-1,1c0,0.6,0.4,1,1,1h6c0.6,0,1-0.4,1-1C32,24.4,31.6,24,31,24z M31,12h-8c-0.6,0-1,0.4-1,1c0,0.6,0.4,1,1,1h8c0.6,0,1-0.4,1-1C32,12.4,31.6,12,31,12z M31,18h-6c-0.6,0-1,0.4-1,1c0,0.6,0.4,1,1,1h6c0.6,0,1-0.4,1-1C32,18.4,31.6,18,31,18z"/></g></svg>
+						<!-- <span>Members</span> -->
+					</a>
+				</li>
+				<li>
+					<a href="#" tabindex="4">
+						<svg version="1.1" id="Line_12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" class="icon-nav" style="enable-background:new 0 0 32 32;" xml:space="preserve"><style type="text/css">.icon-nav--path{fill:#000;}</style><g id="_x35__10_"><path class="icon-nav--path" d="M14,0h-2c-1.1,0-2,0.9-2,2v28c0,1.1,0.9,2,2,2h2c1.1,0,2-0.9,2-2V2C16,0.9,15.1,0,14,0z M14,29c0,0.6-0.4,1-1,1c-0.6,0-1-0.4-1-1V3c0-0.6,0.4-1,1-1c0.6,0,1,0.4,1,1V29z M4,9H2c-1.1,0-2,0.9-2,2v19c0,1.1,0.9,2,2,2h2c1.1,0,2-0.9,2-2V11C6,9.9,5.1,9,4,9z M4,29c0,0.6-0.4,1-1,1c-0.6,0-1-0.4-1-1V12c0-0.6,0.4-1,1-1c0.6,0,1,0.4,1,1V29z M24,16h-2c-1.1,0-2,0.9-2,2v12c0,1.1,0.9,2,2,2h2c1.1,0,2-0.9,2-2V18C26,16.9,25.1,16,24,16z M24,29c0,0.6-0.4,1-1,1c-0.6,0-1-0.4-1-1V19c0-0.6,0.4-1,1-1c0.6,0,1,0.4,1,1V29z"/></g></svg>
+						<!-- <span>Visits</span> -->
+					</a>
+				</li>
+				<li>
+					<a href="#" tabindex="5">
+						<svg version="1.1" id="Line_6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" class="icon-nav" style="enable-background:new 0 0 32 32;" xml:space="preserve"><style type="text/css">.icon-nav--path{fill:#000;}</style><g id="_x32__16_"><path class="icon-nav--path" d="M26,24H14.9c-0.4-1.7-2-3-3.9-3c-1.9,0-3.4,1.3-3.9,3H6c-0.6,0-1,0.4-1,1c0,0.6,0.4,1,1,1h1.1c0.4,1.7,2,3,3.9,3c1.9,0,3.4-1.3,3.9-3H26c0.6,0,1-0.4,1-1C27,24.4,26.6,24,26,24z M11,27.4c-1.3,0-2.4-1.1-2.4-2.4c0-1.3,1.1-2.4,2.4-2.4c1.3,0,2.4,1.1,2.4,2.4C13.4,26.3,12.3,27.4,11,27.4z M26,8H14.9c-0.4-1.7-2-3-3.9-3C9.1,5,7.6,6.3,7.1,8H6C5.4,8,5,8.4,5,9c0,0.6,0.4,1,1,1h1.1c0.4,1.7,2,3,3.9,3c1.9,0,3.4-1.3,3.9-3H26c0.6,0,1-0.4,1-1C27,8.4,26.6,8,26,8z M11,11.4c-1.3,0-2.4-1.1-2.4-2.4c0-1.3,1.1-2.4,2.4-2.4c1.3,0,2.4,1.1,2.4,2.4C13.4,10.3,12.3,11.4,11,11.4z M26,16h-2.1c-0.4-1.7-2-3-3.9-3c-1.9,0-3.4,1.3-3.9,3H6c-0.6,0-1,0.4-1,1c0,0.6,0.4,1,1,1h10.1c0.4,1.7,2,3,3.9,3c1.9,0,3.4-1.3,3.9-3H26c0.6,0,1-0.4,1-1C27,16.4,26.6,16,26,16z M20,19.4c-1.3,0-2.4-1.1-2.4-2.4c0-1.3,1.1-2.4,2.4-2.4c1.3,0,2.4,1.1,2.4,2.4C22.4,18.3,21.3,19.4,20,19.4z M28,0H4C1.8,0,0,1.8,0,4v24c0,2.2,1.8,4,4,4h24c2.2,0,4-1.8,4-4V4C32,1.8,30.2,0,28,0z M30,28c0,1.1-0.9,2-2,2H4c-1.1,0-2-0.9-2-2V4c0-1.1,0.9-2,2-2h24c1.1,0,2,0.9,2,2V28z"/></g></svg>
+						<!-- <span>Settings</span> -->
+					</a>
+				</li>
+			</ul>
+		</nav><!--
+	 --><main role="main">
+	 		<div class="bookmark-area">		
+				<h2>Dashboard</h2>
+				<div class="search-box"> <!-- search-box -->
+					<input type="text" name="search" id="search" placeholder="Search" tabindex="6">
+					<span class="search-icon" tabindex="7"><i class="material-icons">search</i></span>
+				</div>
+			</div>
+			<section class="widget--traffic"> 
+				<div class="alert-msg"> <!-- alert -->
+					<span class="close-btn" tabindex="8">&times;</span>
+					<strong>Alert</strong>
+					Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor.
+				</div>
+				<div class="traffic--header">
+					<h3>Traffic</h3> 
+					<div class="switch-toggle switch-ios" id="traffic-menu"> 
+						<input id="hour3" name="view3" type="radio">
+						<label for="hour3" onclick="" class="traffic-links" id="hour">Hourly</label>
+
+						<input id="day3" name="view3" type="radio">
+						<label for="day3" onclick="" class="traffic-links" id="day">Daily</label>
+
+						<input id="week3" name="view3" type="radio" checked>
+						<label for="week3" onclick="" class="traffic-links" id="week">Weekly</label>
+
+						<input id="month3" name="view3" type="radio">
+						<label for="month3" onclick="" class="traffic-links" id="month">Monthly</label>
+					</div>
+				</div>
+				<div class="chart-container" id="traffic-main"> <!-- traffic widget -->
+					<canvas id="trafficChart" width="600" height="200" class="traffic-content"></canvas>
+				</div>
+			</section>
+			<section class="widget--daily col-6"> 
+				<h3>Daily Traffic</h3>
+				<div class="chart-container"> <!-- daily widget -->
+					<canvas id="dailyChart" width="600" height="300"></canvas>
+				</div>
+			</section>
+			<section class="widget--device col-6">
+				<h3>Mobile Users</h3>
+				<div class="chart-container"> <!-- mobile widget -->
+					<canvas id="mobusersChart" width="600" height="300"></canvas>
+				</div>
+			</section>
+			<section class="widget--social">
+				<h3>Social Stats</h3>
+				<div class="stats">
+					<div class="social twitter"> <!-- social widget -->
+						<div class="social--svg">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" enable-background="new 0 0 32 32"><path d="M32 3.1c-1.2.5-2.4.9-3.8 1 1.4-.8 2.4-2.1 2.9-3.6-1.3.8-2.7 1.3-4.2 1.6-1.1-1.3-2.9-2.1-4.7-2.1-3.6 0-6.6 2.9-6.6 6.6 0 .5.1 1 .2 1.5-5.5-.3-10.3-2.9-13.6-6.9-.6 1-.9 2.1-.9 3.3 0 2.3 1.2 4.3 2.9 5.5-1.1 0-2.1-.3-3-.8v.1c0 3.2 2.3 5.8 5.3 6.4-.6.1-1.1.2-1.7.2-.4 0-.8 0-1.2-.1.8 2.6 3.3 4.5 6.1 4.6-2.2 1.8-5.1 2.8-8.2 2.8-.5 0-1.1 0-1.6-.1 2.9 1.9 6.4 3 10.1 3 12.1 0 18.7-10 18.7-18.7v-.8c1.3-1 2.4-2.2 3.3-3.5z"/></svg>
+						</div>
+						<div class="social--text">
+							<h4>Twitter</h4>
+							<p>10,345</p>
+						</div>
+					</div>
+					<div class="social facebook">
+						<div class="social--svg">
+							<svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.693 56.693"><path d="M40.43 21.739h-7.645v-5.014c0-1.883 1.248-2.322 2.127-2.322h5.395v-8.278l-7.43-.029c-8.248 0-10.125 6.174-10.125 10.125v5.518h-4.77v8.53h4.77v24.137h10.033v-24.137h6.77l.875-8.53z"/></svg>
+						</div>
+						<div class="social--text">
+							<h4>Facebook</h4>
+							<p>8,739</p>
+						</div>
+					</div>
+					<div class="social google">
+						<div class="social--svg">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" enable-background="new 0 0 32 32"><path d="M17.7 25.7c0-.3 0-.5-.1-.8l-.2-.7c-.1-.2-.2-.4-.3-.7-.2-.2-.3-.4-.4-.6l-.5-.6-.5-.5c-.1-.1-.3-.3-.6-.5s-.5-.4-.6-.4l-.6-.4c-.3-.2-.5-.4-.6-.4h-1c-.7 0-1.4 0-2 .1-.7.1-1.4.2-2.1.5-.7.2-1.3.5-1.9.9s-1 .8-1.3 1.4c-.3.6-.5 1.3-.5 2.1 0 .9.2 1.7.7 2.3.5.7 1.1 1.2 1.8 1.6s1.5.7 2.3.9 1.6.3 2.4.3c.8 0 1.5-.1 2.2-.2.7-.2 1.3-.4 1.9-.8.6-.3 1.1-.8 1.4-1.4.3-.6.5-1.3.5-2.1zm-2.3-16.6c0-.8-.1-1.6-.3-2.5-.2-.9-.5-1.7-.9-2.5s-.9-1.5-1.6-2c-.7-.5-1.5-.8-2.3-.8-1.2 0-2.1.4-2.8 1.3-.7.9-1 1.9-1 3.2 0 .6.1 1.2.2 1.9s.4 1.3.7 2c.3.7.7 1.3 1.1 1.8.4.5.9 1 1.5 1.3.6.3 1.2.5 1.9.5 1.2 0 2.1-.4 2.7-1.2.5-.7.8-1.7.8-3zm-2.5-9.1h8.4l-2.6 1.5h-2.6c.9.6 1.6 1.4 2.1 2.4s.8 2.1.8 3.2c0 .9-.1 1.8-.4 2.5-.3.7-.7 1.3-1.1 1.8-.4.4-.8.9-1.3 1.2-.4.4-.8.8-1.1 1.2-.3.4-.4.8-.4 1.3 0 .3.1.7.3 1 .2.3.5.6.8.9.3.3.7.6 1.1.9.4.3.8.7 1.2 1.1.4.4.8.8 1.1 1.3.3.5.6 1 .8 1.6.2.6.3 1.3.3 2 0 2.1-.9 3.9-2.7 5.4-1.9 1.7-4.6 2.5-8.1 2.5-.8 0-1.5-.1-2.3-.2-.8-.1-1.6-.3-2.3-.6-.8-.3-1.5-.7-2.1-1.1-.6-.4-1.1-1-1.5-1.7-.3-.6-.5-1.3-.5-2.2 0-.8.2-1.6.7-2.6.4-.8 1-1.5 1.8-2.1.8-.6 1.8-1.1 2.8-1.4 1-.3 2-.5 3-.7.9-.1 1.9-.2 2.9-.3-.8-1.1-1.2-2-1.2-2.9v-.5l.1-.4c0-.1.1-.2.2-.4s.1-.3.1-.4c-.5.1-1 .1-1.3.1-1.9 0-3.5-.6-4.9-1.9-1.4-1.3-2-2.8-2-4.7 0-1.8.6-3.4 1.8-4.8 1.2-1.3 2.7-2.2 4.5-2.6 1.2-.3 2.4-.4 3.6-.4zm19.9 4.9v2.5h-4.9v4.9h-2.5v-4.9h-4.9v-2.5h4.9v-4.9h2.5v4.9h4.9z"/></svg>
+						</div>
+						<div class="social--text">
+							<h4>Google&plus;</h4>
+							<p>2,530</p>
+						</div>
+					</div>
+				</div>
+			</section><!--/.social network stats-->
+			<section class="members register col-6">
+				<h3>New Members</h3>
+				<div class="members-info">
+					<img src="https://randomuser.me/api/portraits/women/57.jpg" alt="Victoria Chambers">
+					<div class="members-info--descr">
+						<div>
+							<p>Victoria Chambers</p>
+							<a href="mailto:victoria.chambers80@example.com">victoria.chambers80@example.com</a>
+						</div>
+						<p>10/15/15</p>
+					</div>
+				</div>
+				<div class="members-info">
+					<img src="https://randomuser.me/api/portraits/men/51.jpg" alt="Dale Byrd">
+					<div class="members-info--descr">
+						<div>
+							<p>Dale Byrd</p>
+							<a href="mailto:dale.byrd52@example.com">dale.byrd52@example.com</a>
+						</div>
+						<p>10/15/15</p>
+					</div>
+				</div>
+				<div class="members-info">
+					<img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Dawn Wood">
+					<div class="members-info--descr">
+						<div>
+							<p>Dawn Wood</p>
+							<a href="mailto:dawn.wood16@example.com">dawn.wood16@example.com</a>
+						</div>
+						<p>10/15/15</p>
+					</div>
+				</div>
+				<div class="members-info">
+					<img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Dan Oliver">
+					<div class="members-info--descr">
+						<div>
+							<p>Dan Oliver</p>
+							<a href="dan.oliver82@example.com">dan.oliver82@example.com</a>
+						</div>
+						<p>10/15/15</p>
+					</div>
+				</div>
+			</section><!--/.new members-->
+			<section class="members activity col-6">
+				<h3>Recent Activities</h3>
+				<div class="members-activity">
+					<img src="https://randomuser.me/api/portraits/women/57.jpg" alt="Victoria Chambers">
+					<div class="members-activity--descr">
+						<p>Victoria Chambers commented on <span class="members-activity--style">SuperApp&apos;s SEO Tips</span></p>
+						<p class="members-activity--time">4 hours ago</p>
+					</div>
+					<a href="#">〉</a>
+				</div>
+				<div class="members-activity">
+					<img src="https://randomuser.me/api/portraits/men/51.jpg" alt="Dale Byrd">
+					<div class="members-activity--descr">
+						<p>Dale Byrd liked the post <span class="members-activity--style">Facebook&apos;s Changes for 2018</span></p>
+						<p class="members-activity--time">5 hours ago</p>
+					</div>
+					<a href="#">〉</a>
+				</div>
+				<div class="members-activity">
+					<img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Dawn Wood">
+					<div class="members-activity--descr">
+						<p>Dawn Wood commented on <span class="members-activity--style">Facebook&apos;s Changes for 2018</span></p>
+						<p class="members-activity--time">5 hours ago</p>
+					</div>
+					<a href="#">〉</a>
+				</div>
+				<div class="members-activity">
+					<img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Dan Oliver">
+					<div class="members-activity--descr">
+						<p>Dan Oliver posted <span class="members-activity--style">SuperApp&apos;s SEO Tips</span></p>
+						<p class="members-activity--time">1 day ago</p>
+					</div>
+					<a href="#">〉</a>
+				</div>
+			</section><!--/.members activities-->
+			<section class="col-6">
+				<h3>Message User</h3>
+				<form class="form" id="form" role="form" action="#form" method="post" autocomplete="off">
+					<div class="autocomplete">
+						<span class="tooltip" data-tip="This field should be filled in with username"></span>
+						<input type="text" id="username" name="user-search" placeholder="Search for User" required>
+					</div>
+					<div class="textarea--wrapper">
+						<span class="tooltip" data-tip="This field should be filled in with message and can't start with space"></span>
+						<textarea name="text-message" id="textmessage" placeholder="Message for User" required></textarea>
+					</div>
+					<button type="submit" id="button-send">Send</button>
+				</form>
+			</section>
+			<section class="widget--settings col-6">
+				<h3>Settings</h3>
+				<form id="settings">
+					<label class="onoffswitch-label switch-light switch-ios" onclick="" for="onoffswitch--email"> Send Email Notifications
+						<input type="checkbox" name="switch-input" class="onoffswitch-checkbox" id="onoffswitch--email" checked>
+						<span class="onoffswitch-inner">
+							<span>OFF</span>
+							<span>ON</span>
+							<a></a>
+						</span>
+					</label>
+					<label class="onoffswitch-label switch-light switch-ios" onclick="" for="onoffswitch--profile"> Set Profile to Public
+						<input type="checkbox" name="switch-input" class="onoffswitch-checkbox" id="onoffswitch--profile" checked>
+						<span class="onoffswitch-inner">
+							<span>OFF</span>
+							<span>ON</span>
+							<a></a>
+						</span>
+					</label>
+					<div class="selection">
+						<select id="timezone">
+							<option value="placeholder" selected>Select Timezone</option>
+							<option>UTC -12:00</option>
+							<option>UTC -11:00</option>
+							<option>UTC -10:00</option>
+							<option>UTC -09:30</option>
+							<option>UTC -09:00</option>
+							<option>UTC -08:00</option>
+							<option>UTC -07:00</option>
+							<option>UTC -06:00</option>
+							<option>UTC -05:00</option>
+							<option>UTC -04:00</option>
+							<option>UTC -03:30</option>
+							<option>UTC -03:00</option>
+							<option>UTC -02:00</option>
+							<option>UTC -01:00</option>
+							<option>UTC ±00:00</option>
+							<option>UTC +01:00</option>
+							<option>UTC +02:00</option>
+							<option>UTC +03:00</option>
+							<option>UTC +03:30</option>
+							<option>UTC +04:00</option>
+							<option>UTC +04:30</option>
+							<option>UTC +05:00</option>
+							<option>UTC +05:30</option>
+							<option>UTC +05:45</option>
+							<option>UTC +06:00</option>
+							<option>UTC +06:30</option>
+							<option>UTC +07:00</option>
+							<option>UTC +08:00</option>
+							<option>UTC +08:30</option>
+							<option>UTC +08:45</option>
+							<option>UTC +09:00</option>
+							<option>UTC +09:30</option>
+							<option>UTC +10:00</option>
+							<option>UTC +10:30</option>
+							<option>UTC +11:00</option>
+							<option>UTC +12:00</option>
+							<option>UTC +12:45</option>
+							<option>UTC +13:00</option>
+							<option>UTC +14:00</option>
+						</select>
+					</div>
+					<!-- <div class="widget-settings-buttons"> -->
+						<button type="submit" id="save">Save</button><!--
+					 --><button type="reset" id="cancel">Cancel</button>
+					<!-- </div> -->
+				</form>
+			</section>
+		</main>		
+	</div>
+</body>
+</html>

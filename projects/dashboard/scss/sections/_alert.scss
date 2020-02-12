@@ -1,0 +1,31 @@
+.alert-msg {
+	background-color: $violet--regular;
+	border-radius: .3rem;
+	margin: .9rem auto;
+	padding: 1.2rem;
+	font-weight: $font-weight--light;
+	@extend %font-color--white;
+	opacity: 1;
+	transition: opacity 0.5s;
+	letter-spacing: .025rem;
+
+	strong {
+		margin-right: .5rem;
+		font-weight: $font-weight--bold;
+	}
+
+	.close-btn {
+		font-weight: $font-weight--bold;
+		font-size: 1.3rem;
+		line-height: 1.3rem;
+		margin: -1.3rem -1.3rem auto auto;
+		padding: .8rem;
+		float: right;
+		cursor: pointer;
+		transition: 0.3s;
+		&:hover,
+		&:focus {
+			color: $black;
+		}
+	}
+}

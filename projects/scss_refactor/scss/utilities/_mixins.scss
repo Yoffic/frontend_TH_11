@@ -1,0 +1,66 @@
+// Text
+
+@mixin text($size, $l-height: null, $weight: null, $color: null) {
+  font-size: $size;
+  line-height: $l-height;
+  font-weight: $weight;
+  color: $color;
+}
+
+// Flex 
+
+@mixin display {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+@mixin flex($rule-name, $value) {
+	-webkit-#{$rule-name}: $value;
+		-ms-#{$rule-name}:	$value;
+			#{$rule-name}:	$value;
+}
+
+// Padding definition
+
+@mixin padding-sides($padding-left, $padding-right) {
+	padding-left: $padding-left;
+	padding-right: $padding-right;
+}
+
+@mixin padding-edges($padding-top, $padding-bottom) {
+	padding-top: $padding-top;
+	padding-bottom: $padding-bottom;
+}
+
+// Margin definition
+
+@mixin margin-sides($margin-left, $margin-right) {
+	margin-left: $margin-left;
+	margin-right: $margin-right;
+}
+
+@mixin margin-edges($margin-top, $margin-bottom) {
+	margin-top: $margin-top;
+	margin-bottom: $margin-bottom;
+}
+
+// Calculate em
+
+@function em($target, $context: $base__font-size) {
+	@return ($target / $context) * 1em;
+}
+
+// Media Queries
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}

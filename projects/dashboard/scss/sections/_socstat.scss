@@ -1,0 +1,82 @@
+.widget--social {
+	width: 100%;
+	.stats {
+		@include tablet {
+			@include display;
+			@include flex(justify-content, center);
+		}
+		.social {
+			@extend %display-flex;
+			@include flex(flex-flow, row wrap);
+			@include flex(align-items, center);
+			padding: 1rem 1rem 1rem 1.3rem;
+			margin-bottom: 1rem;
+			border: .5px solid $gray--light;
+			border-radius: .3rem;
+			@include tablet {
+				width: 33%;
+			}
+			.social--svg {
+				background-color: $violet--regular;
+				border-radius: 50%;
+				display: inline-block;
+			}
+			.social--text {
+				margin-left: 1.7rem;
+				h4{
+					font-size: 1.05rem;
+					font-weight: $font-weight--regular;
+					color: $violet--regular;
+					letter-spacing: .07rem;
+					margin: 0;
+				}
+				p {
+					margin: 0;
+					font-size: 2.5rem;
+					font-weight: $font-weight--light;
+					color: $gray--deep;
+					@include tablet {
+						font-size: 2rem;
+					}
+					@include desktop {
+						font-size: 2.5rem;
+					}
+				}
+			}
+			svg {
+				fill: $white;
+			}
+		}
+		.twitter {
+			@include tablet {
+				margin-right: 1.5rem;
+			}
+			.social--svg {
+				padding: 1.1rem 1rem .7rem;
+			}
+			svg {
+				height: 1.8rem;
+			}
+		}
+		
+		.facebook {
+			@include tablet {
+				margin-right: 1.5rem;
+			}
+			.social--svg {
+				padding: .75rem .85rem;
+			}
+			svg { 
+				height: 2.1rem;
+			}
+		}
+		.google {
+			.social--svg {
+				padding: 1.1rem 1rem .7rem;
+			}
+			svg {
+				height: 1.8rem;
+			}
+		}
+	}
+}

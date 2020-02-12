@@ -1,0 +1,47 @@
+.main-header {
+	@include padding-edges(em(24px), null);
+	@include tablet {
+		@include padding-edges(em(49px), null);
+	}
+	nav {
+		@extend %display-flex;
+		@extend %flex-column;
+		@include desktop {
+			@include flex(flex-direction, row);
+			@include flex(align-items, center);
+			@include margin-edges(.2em, null);
+		}
+		.name {
+			margin: 0 0 .95em;
+			@include tablet {
+				font-size: 27px; 
+				@include margin-edges(null, .8em);
+			}
+			@include desktop {
+				@include margin-sides(null, auto); /* for flexbox layout */
+			}
+		}
+		.main-nav {
+			@extend %display-flex;
+			@extend %flex-column;
+			@include tablet {
+				@include flex(flex-direction, row);
+				@include flex(justify-content, center);
+			}
+			@include desktop {
+				margin: -.5em -1.4em 0 0;
+				@include flex(justify-content, space-between);
+			}
+			a {
+				display: block;
+				@include margin-edges(null, .35em);
+				padding: .7em;
+				background-color: $extra-light-grey;
+				@include tablet {
+					background-color: transparent;
+					@include padding-sides(1.4em, 1.4em);
+				}
+			}
+		}
+	}
+}

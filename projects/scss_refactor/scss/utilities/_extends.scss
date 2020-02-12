@@ -1,0 +1,35 @@
+%font-primary {
+	font-family: $font-family--primary;
+}
+
+%font-secondary {
+	font-family: $font-family--secondary;
+}
+
+%color-body {
+	color: $dark-grey;
+}
+
+%color-midnight {
+	color: $midnight;
+}
+
+%color-dusk {
+	color: $dusk;
+}
+
+%zero-margin {
+	margin: 0;
+}
+
+%margin-bottom--head {
+	margin-bottom: 2.17em;
+}
+
+%display-flex {
+	@include display;
+}
+
+%flex-column {
+	@include flex(flex-direction, column);
+}

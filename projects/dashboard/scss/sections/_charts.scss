@@ -1,0 +1,9 @@
+.chart-container {
+	padding: .3rem 0;
+	
+}
+.widget--device {
+	@include tablet {
+		border-left: 1px solid $gray--light;
+	}
+}
